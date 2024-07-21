@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Zain", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #0074D9, #B10DC9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 10vw;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 23vw;
+    height: 31vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/3/39/Mentos-box.jpg');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+    margin: 0 auto 20px;
+}
+
+.photo:hover {
+    width: 25vw;
+    height: 24vh;
+    background-image: url('https://i.ibb.co/yV55SGh/giphy.gif');
+}
+
+.content p {
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 3vw;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0cec9a;
+    color: #333231;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff9900;
+}
